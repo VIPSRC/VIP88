@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp">
+
+        <TextView
+            android:id="@+id/x_suit_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="X-Suit Skin"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:textColor="@color/button"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <LinearLayout
+            android:id="@+id/x_suit_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:weightSum="2"
+            app:layout_constraintTop_toBottomOf="@id/x_suit_title">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <!-- X-Suit Skin Checkboxes for First Column -->
+                <CheckBox
+                    android:id="@+id/skin1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Poseidon"
+                    android:fontFamily="@font/mfontx"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    android:theme="@style/PKSwitch" />
+                <CheckBox
+                    android:id="@+id/skin2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Avalanche"
+                    android:fontFamily="@font/mfontx"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    android:theme="@style/PKSwitch" />
+                <CheckBox
+                    android:id="@+id/skin3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Silvanus"
+                    android:fontFamily="@font/mfontx"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    android:theme="@style/PKSwitch" />
+                <CheckBox
+                    android:id="@+id/skin4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Golden Pharaoh"
+                    android:fontFamily="@font/mfontx"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    android:theme="@style/PKSwitch" />
+                <CheckBox
+                    android:id="@+id/skin5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Stygian Liege"
+                    android:fontFamily="@font/mfontx"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    android:theme="@style/PKSwitch" />
+                <CheckBox
+                    android:id="@+id/skin6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Marmoris"
+                    android:fontFamily="@font/mfontx"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    android:theme="@style/PKSwitch" />
+                <CheckBox
+                    android:id="@+id/skin7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fiore"
+                    android:fontFamily="@font/mfontx"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    android:theme="@style/PKSwitch" />
+                <CheckBox
+                    android:id="@+id/skin8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ignis"
+                    android:fontFamily="@font/mfontx"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    android:theme="@style/PKSwitch" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <!-- X-Suit Skin Checkboxes for Second Column -->
+                <CheckBox
+                    android:id="@+id/skin9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dragon Ball"
+                    android:fontFamily="@font/mfontx"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    android:theme="@style/PKSwitch" />
+                <CheckBox
+                    android:id="@+id/skin10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Iridescence"
+                    android:fontFamily="@font/mfontx"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    android:theme="@style/PKSwitch" />
+                <CheckBox
+                    android:id="@+id/skin11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Blood Raven"
+                    android:fontFamily="@font/mfontx"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    android:theme="@style/PKSwitch" />
+                <CheckBox
+                    android:id="@+id/skin12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="The Lover's Grace"
+                    android:fontFamily="@font/mfontx"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    android:theme="@style/PKSwitch" />
+                <CheckBox
+                    android:id="@+id/skin13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Inferno Fiend"
+                    android:fontFamily="@font/mfontx"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    android:theme="@style/PKSwitch" />
+                <CheckBox
+                    android:id="@+id/skin14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mummy Blue"
+                    android:fontFamily="@font/mfontx"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    android:theme="@style/PKSwitch" />
+                <CheckBox
+                    android:id="@+id/skin15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mummy White"
+                    android:fontFamily="@font/mfontx"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    android:theme="@style/PKSwitch" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/helmet_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Helmet Skin"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:textColor="@color/button"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp"
+            app:layout_constraintTop_toBottomOf="@id/x_suit_layout"/>
+
+        <LinearLayout
+            android:id="@+id/helmet_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:weightSum="2"
+            app:layout_constraintTop_toBottomOf="@id/helmet_title">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <!-- Helmet Skin Checkboxes for First Column -->
+                <CheckBox
+                    android:id="@+id/skin16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Magma Skull"
+                    android:fontFamily="@font/mfontx"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    android:theme="@style/PKSwitch" />
+                <CheckBox
+                    android:id="@+id/skin17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Glacier"
+                    android:fontFamily="@font/mfontx"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    android:theme="@style/PKSwitch" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <!-- Helmet Skin Checkboxes for Second Column -->
+                <CheckBox
+                    android:id="@+id/skin18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ignis"
+                    android:fontFamily="@font/mfontx"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    android:theme="@style/PKSwitch" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Similar structure for Backpack and Weapon Skins -->
+        <TextView
+            android:id="@+id/backpack_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Backpack Skin"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:textColor="@color/button"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp"
+            app:layout_constraintTop_toBottomOf="@id/helmet_layout"/>
+
+        <LinearLayout
+            android:id="@+id/backpack_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:weightSum="2"
+            app:layout_constraintTop_toBottomOf="@id/backpack_title">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <!-- Backpack Skin Checkboxes for First Column -->
+                <CheckBox
+                    android:id="@+id/skin19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Blood Raven"
+                    android:fontFamily="@font/mfontx"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    android:theme="@style/PKSwitch" />
+                <CheckBox
+                    android:id="@+id/skin20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Poseidon"
+                    android:fontFamily="@font/mfontx"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    android:theme="@style/PKSwitch" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <!-- Backpack Skin Checkboxes for Second Column -->
+                <CheckBox
+                    android:id="@+id/skin21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pharaoh's Regalia"
+                    android:fontFamily="@font/mfontx"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    android:theme="@style/PKSwitch" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/weapon_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Weapon Skin"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:textColor="@color/button"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp"
+            app:layout_constraintTop_toBottomOf="@id/backpack_layout"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:weightSum="2"
+            app:layout_constraintTop_toBottomOf="@id/weapon_title">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <!-- Weapon Skin Checkboxes for First Column -->
+                <CheckBox
+                    android:id="@+id/skin22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="M416"
+                    android:fontFamily="@font/mfontx"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    android:theme="@style/PKSwitch" />
+                <CheckBox
+                    android:id="@+id/skin23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="AKM"
+                    android:fontFamily="@font/mfontx"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    android:theme="@style/PKSwitch" />
+                <CheckBox
+                    android:id="@+id/skin24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SCAR-L"
+                    android:fontFamily="@font/mfontx"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    android:theme="@style/PKSwitch" />
+                <CheckBox
+                    android:id="@+id/skin25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ACE32"
+                    android:fontFamily="@font/mfontx"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    android:theme="@style/PKSwitch" />
+                <CheckBox
+                    android:id="@+id/skin26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Groza"
+                    android:fontFamily="@font/mfontx"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    android:theme="@style/PKSwitch" />
+                <CheckBox
+                    android:id="@+id/skin27"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="QBZ"
+                    android:fontFamily="@font/mfontx"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    android:theme="@style/PKSwitch" />
+                <CheckBox
+                    android:id="@+id/skin28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="FAMAS"
+                    android:fontFamily="@font/mfontx"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    android:theme="@style/PKSwitch" />
+                <CheckBox
+                    android:id="@+id/skin29"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="AUG"
+                    android:fontFamily="@font/mfontx"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    android:theme="@style/PKSwitch" />
+                <CheckBox
+                    android:id="@+id/skin30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="HoneyBadger"
+                    android:fontFamily="@font/mfontx"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    android:theme="@style/PKSwitch" />
+                <CheckBox
+                    android:id="@+id/skin31"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="M16A$"
+                    android:fontFamily="@font/mfontx"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    android:theme="@style/PKSwitch" />
+                <CheckBox
+                    android:id="@+id/skin32"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="M762"
+                    android:fontFamily="@font/mfontx"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    android:theme="@style/PKSwitch" />
+                <CheckBox
+                    android:id="@+id/skin33"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="P90"
+                    android:fontFamily="@font/mfontx"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    android:theme="@style/PKSwitch" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <!-- Weapon Skin Checkboxes for Second Column -->
+                <CheckBox
+                    android:id="@+id/skin34"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="UMP45"
+                    android:fontFamily="@font/mfontx"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    android:theme="@style/PKSwitch" />
+                <CheckBox
+                    android:id="@+id/skin35"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="UZI"
+                    android:fontFamily="@font/mfontx"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    android:theme="@style/PKSwitch" />
+                <CheckBox
+                    android:id="@+id/skin36"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vector"
+                    android:fontFamily="@font/mfontx"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    android:theme="@style/PKSwitch" />
+                <CheckBox
+                    android:id="@+id/skin37"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="AWM"
+                    android:fontFamily="@font/mfontx"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    android:theme="@style/PKSwitch" />
+                <CheckBox
+                    android:id="@+id/skin38"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="AMR"
+                    android:fontFamily="@font/mfontx"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    android:theme="@style/PKSwitch" />
+                <CheckBox
+                    android:id="@+id/skin39"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="M24"
+                    android:fontFamily="@font/mfontx"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    android:theme="@style/PKSwitch" />
+                <CheckBox
+                    android:id="@+id/skin40"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kar98"
+                    android:fontFamily="@font/mfontx"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    android:theme="@style/PKSwitch" />
+                <CheckBox
+                    android:id="@+id/skin41"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mk14"
+                    android:fontFamily="@font/mfontx"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    android:theme="@style/PKSwitch" />
+                <CheckBox
+                    android:id="@+id/skin42"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MG3"
+                    android:fontFamily="@font/mfontx"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    android:theme="@style/PKSwitch" />
+                <CheckBox
+                    android:id="@+id/skin43"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DP28"
+                    android:fontFamily="@font/mfontx"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    android:theme="@style/PKSwitch" />
+                <CheckBox
+                    android:id="@+id/skin44"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="M249"
+                    android:fontFamily="@font/mfontx"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    android:theme="@style/PKSwitch" />
+                <CheckBox
+                    android:id="@+id/skin45"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DBS"
+                    android:fontFamily="@font/mfontx"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    android:theme="@style/PKSwitch" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

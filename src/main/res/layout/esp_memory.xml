@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/background"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="5dp"
+                                android:alpha="0.8"
+                                android:fontFamily="@font/poppins_medium"
+                                android:gravity="start|center"
+                                android:text="Fixed Crash"
+                                android:textColor="@color/white"
+                                android:textStyle="normal" />
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:fontFamily="@font/poppins_medium"
+                                android:gravity="start|center"
+                                android:text="please actived in first logo, for fix crash"
+                                android:textColor="@color/background"
+                                android:textSize="12sp" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:gravity="center">
+
+
+                        <Switch
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:thumb="@drawable/ic_switch_off"
+                            android:track="@drawable/ic_switch_on" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:visibility="visible"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <ToggleButton
+                    android:id="@+id/ismagichead"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_margin="4.0dip"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/tbutton"
+                    android:checked="false"
+                    android:fontFamily="@font/poppins_medium"
+                    android:tag="0"
+                    android:text="@string/magic_bullet_head"
+                    android:textColor="#FFFFFFFF"
+                    android:textOff="@string/magic_bullet_head"
+                    android:textOn="@string/magic_bullet_head"
+                    android:textSize="12.0dip"
+                    android:textStyle="bold" />
+
+                <ToggleButton
+                    android:id="@+id/ismagicbody"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_margin="4.0dip"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/tbutton"
+                    android:checked="false"
+                    android:fontFamily="@font/poppins_medium"
+                    android:tag="0"
+                    android:text="@string/magic_bullet_body"
+                    android:textColor="#FFFFFFFF"
+                    android:textOff="@string/magic_bullet_body"
+                    android:textOn="@string/magic_bullet_body"
+                    android:textSize="12.0dip"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <ToggleButton
+                    android:id="@+id/issmallcross"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_margin="4.0dip"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/tbutton"
+                    android:checked="false"
+                    android:fontFamily="@font/poppins_medium"
+                    android:tag="0"
+                    android:text="@string/small_crosshair"
+                    android:textColor="#FFFFFFFF"
+                    android:textOff="@string/small_crosshair"
+                    android:textOn="@string/small_crosshair"
+                    android:textSize="12.0dip"
+                    android:textStyle="bold" />
+
+                <ToggleButton
+                    android:id="@+id/isreducerecoil"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_margin="4.0dip"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/tbutton"
+                    android:checked="false"
+                    android:fontFamily="@font/poppins_medium"
+                    android:tag="0"
+                    android:text="@string/less_recoil"
+                    android:textColor="#FFFFFFFF"
+                    android:textOff="@string/less_recoil"
+                    android:textOn="@string/less_recoil"
+                    android:textSize="12.0dip"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <ToggleButton
+                    android:id="@+id/isaimlock"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_margin="4.0dip"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/tbutton"
+                    android:checked="false"
+                    android:fontFamily="@font/poppins_medium"
+                    android:tag="0"
+                    android:text="@string/aimbot_100m"
+                    android:textColor="#FFFFFFFF"
+                    android:textOff="@string/aimbot_100m"
+                    android:textOn="@string/aimbot_100m"
+                    android:textSize="12.0dip"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/background"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="5dp"
+                                android:alpha="0.8"
+                                android:fontFamily="@font/poppins_medium"
+                                android:gravity="start|center"
+                                android:text="@string/wide_view"
+                                android:textColor="@color/white"
+                                android:textStyle="normal" />
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:fontFamily="@font/poppins_medium"
+                                android:gravity="start|center"
+                                android:text="@string/expands_view_of_the_screen"
+                                android:textColor="@color/background"
+                                android:textSize="13sp" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center">
+
+
+                        <SeekBar
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_weight="1"
+                            android:max="600"
+                            android:progress="0"
+                            android:progressTint="@color/white"
+                            android:thumbTint="@color/blue" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:visibility="gone"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:backgroundTint="@color/background"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.5">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginTop="5dp"
+                                    android:alpha="0.8"
+                                    android:fontFamily="@font/poppins_medium"
+                                    android:gravity="start|center"
+                                    android:text="Ipad View"
+                                    android:textColor="@color/white"
+                                    android:textStyle="normal" />
+
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:fontFamily="@font/poppins_medium"
+                                    android:gravity="start|center"
+                                    android:text="POV screen like ipad view"
+                                    android:textColor="@color/whitegelap"
+                                    android:textSize="12sp" />
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:gravity="center">
+
+
+                            <Switch
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:thumb="@drawable/ic_switch_off"
+                                android:track="@drawable/ic_switch_on" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:alpha="0.8"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="@string/wide_view"
+                            android:textColor="@color/white"
+                            android:textSize="13sp"
+                            android:textStyle="normal" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:fontFamily="@font/poppins_medium"
+                                android:text="@string/set_wide_view_range"
+                                android:textColor="@color/whitegelap"
+                                android:textSize="11sp" />
+
+
+                            <TextView
+                                android:id="@+id/rangetextwide"
+                                android:layout_width="40dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:layout_weight="1"
+                                android:alpha="0.8"
+                                android:fontFamily="@font/poppins_medium"
+                                android:text="@string/esp_memory_rangetextwide_text"
+                                android:textColor="@color/whitegelap"
+                                android:textSize="11sp"
+                                android:textStyle="bold" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+
+                        <SeekBar
+                            android:id="@+id/rangewide"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:max="8"
+                            android:progress="0"
+                            android:progressDrawable="@drawable/proggress"
+                            android:thumb="@drawable/thumb">
+
+                        </SeekBar>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

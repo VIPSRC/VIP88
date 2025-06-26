@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:background="@color/background">
+
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:visibility="visible"
+        android:layout_centerInParent="true"
+        android:paddingEnd="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:paddingStart="0dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:id="@+id/image_info">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                app:lottie_rawRes="@raw/loading_strip"
+                android:id="@+id/animationView"
+                app:lottie_autoPlay="false"
+                app:lottie_loop="true" />
+
+            <ProgressBar
+                android:layout_height="6.0dip"
+                android:layout_width="178.0dip"
+                android:visibility="gone"
+                android:layout_marginBottom="18.0dip"
+                android:max="100"
+                android:indeterminate="true"
+                style="?android:progressBarStyleLarge"
+                android:layout_marginTop="30.0dip"
+                android:layout_gravity="center_horizontal" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:visibility="visible"
+            android:layout_marginBottom="10.0dip"
+            android:layout_below="@id/image_info"
+            android:layout_marginEnd="40.0dip"
+            android:padding="10dp"
+            android:layout_marginTop="20.0dip"
+            android:layout_marginStart="40.0dip">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:gravity="center_horizontal"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+                android:textSize="24.0sp"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/raleway_bold"
+                tools:targetApi="jelly_bean"
+                android:id="@+id/tv_app"
+                android:text="@string/app_name" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:textSize="15.0sp"
+                android:layout_centerHorizontal="true"
+                android:singleLine="true"
+                android:layout_marginTop="0.0dip"
+                android:focusable="true"
+                android:layout_below="@id/tv_app"
+                android:gravity="center_horizontal"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+                android:focusableInTouchMode="true"
+                android:fontFamily="@font/raleway_light"
+                tools:targetApi="jelly_bean"
+                android:id="@+id/tv_description"
+                android:text="@string/app_description" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

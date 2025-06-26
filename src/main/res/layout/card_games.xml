@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    android:layout_marginBottom="15dp"
+    android:elevation="20dp"
+    android:orientation="horizontal"
+    app:cardUseCompatPadding="true"
+    app:contentPadding="16dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/okBtn"
+            android:layout_width="100dp"
+            android:layout_height="100dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                app:cardCornerRadius="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="50dp"
+                app:cardBackgroundColor="@color/secodary2">
+
+                <TextView
+                    android:id="@+id/gameVersion"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Safe"
+                    android:gravity="center"
+                    android:fontFamily="@font/font1"
+                    android:textSize="11sp"
+                    android:textColor="@color/white"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                app:cardCornerRadius="10dp"
+                android:layout_marginTop="75dp"
+                app:cardBackgroundColor="@color/secodary2">
+
+                <TextView
+                    android:id="@+id/status"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Not Intalled"
+                    android:gravity="center"
+                    android:fontFamily="@font/cof"
+                    android:textSize="11sp"
+                    android:textColor="@color/white"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <ImageView
+                android:id="@+id/gameIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/pubg_global"/>
+
+
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/gameTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PUBGM GLOBAL"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/font1"
+            android:textSize="11sp"
+            android:textColor="@color/white"/>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>

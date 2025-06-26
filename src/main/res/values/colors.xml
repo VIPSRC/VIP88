@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFF</color>
+    <color name="background">#1C2023</color>
+    <color name="secodary">#23282E</color>
+    <color name="secodary2">#272E48</color>
+    <color name="red">#C52C2E</color>
+    <color name="button">#9729ed</color>
+    <color name="grey_400">#ff434343</color>
+    <color name="blue">#9729ed</color>
+    <color name="whitegelap">#9C9999</color>
+
+    <color name="IJO">#38B841</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="black">#000000</color>
+
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+
+    <color name="colorAccent">#FF4081</color>
+</resources>

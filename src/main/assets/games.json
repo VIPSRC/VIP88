@@ -1,0 +1,34 @@
+{
+    "gamesList": [
+    {
+      "title": "PUBG GLOBAL",
+      "package": "com.tencent.ig",
+      "version": "3.5.0",
+      "status": "Safe"
+    },
+    {
+      "title": "PUBG KOREA",
+      "package": "com.pubg.krmobile",
+      "version": "3.5.0",
+      "status": "Safe"
+    },
+      {
+        "title": "PUBG VIETNAM",
+        "package": "com.vng.pubgmobile",
+        "version": "3.5.0",
+        "status": "Safe"
+      },
+    {
+      "title": "PUBG TAIWAN",
+      "package": "com.rekoo.pubgm",
+      "version": "3.5.0",
+      "status": "Safe"
+    },
+      {
+        "title": "PUBG INDIA",
+        "package": "com.pubg.imobile",
+        "version": "3.5.0",
+        "status": "Risk"
+      }
+  ]
+}

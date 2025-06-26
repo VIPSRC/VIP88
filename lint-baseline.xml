@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="5" by="lint Koala | 2024.1.1 Patch 2">
+
+    <issue
+        id="UseSwitchCompatOrMaterialCode"
+        message="Use `SwitchCompat` from AppCompat or `SwitchMaterial` from Material library">
+        <location
+            file="src/main/java/pubgm/loader/floating/FloatRei.java"
+            line="101"/>
+    </issue>
+
+    <issue
+        id="UseSwitchCompatOrMaterialCode"
+        message="Use `SwitchCompat` from AppCompat or `SwitchMaterial` from Material library">
+        <location
+            file="src/main/java/pubgm/loader/floating/FloatRei.java"
+            line="102"/>
+    </issue>
+
+    <issue
+        id="UseSwitchCompatOrMaterialXml"
+        message="Use `SwitchCompat` from AppCompat or `SwitchMaterial` from Material library">
+        <location
+            file="src/main/res/layout/esp_memory.xml"
+            line="89"/>
+    </issue>
+
+    <issue
+        id="UseSwitchCompatOrMaterialXml"
+        message="Use `SwitchCompat` from AppCompat or `SwitchMaterial` from Material library">
+        <location
+            file="src/main/res/layout/esp_memory.xml"
+            line="374"/>
+    </issue>
+
+    <issue
+        id="UseSwitchCompatOrMaterialXml"
+        message="Use `SwitchCompat` from AppCompat or `SwitchMaterial` from Material library">
+        <location
+            file="src/main/res/layout/floataimbot.xml"
+            line="96"/>
+    </issue>
+
+    <issue
+        id="UseSwitchCompatOrMaterialXml"
+        message="Use `SwitchCompat` from AppCompat or `SwitchMaterial` from Material library">
+        <location
+            file="src/main/res/layout/floataimbot.xml"
+            line="157"/>
+    </issue>
+
+    <issue
+        id="UseCompatLoadingForDrawables"
+        message="Use `ResourcesCompat.getDrawable()`">
+        <location
+            file="src/main/java/pubgm/loader/utils/ActivityCompat.java"
+            line="131"/>
+    </issue>
+
+    <issue
+        id="UseCompatLoadingForDrawables"
+        message="Use `ResourcesCompat.getDrawable()`">
+        <location
+            file="src/main/java/pubgm/loader/utils/ActivityCompat.java"
+            line="326"/>
+    </issue>
+
+    <issue
+        id="UseCompatLoadingForDrawables"
+        message="Use `AppCompatResources.getDrawable()`">
+        <location
+            file="src/main/java/pubgm/loader/activity/LoginActivity.java"
+            line="273"/>
+    </issue>
+
+    <issue
+        id="UseCompatLoadingForDrawables"
+        message="Use `ResourcesCompat.getDrawable()`">
+        <location
+            file="src/main/java/pubgm/loader/activity/MainActivity.java"
+            line="421"/>
+    </issue>
+
+    <issue
+        id="UseCompatLoadingForDrawables"
+        message="Use `ResourcesCompat.getDrawable()`">
+        <location
+            file="src/main/java/pubgm/loader/activity/MainActivity.java"
+            line="439"/>
+    </issue>
+
+    <issue
+        id="UseCompatLoadingForDrawables"
+        message="Use `ResourcesCompat.getDrawable()`">
+        <location
+            file="src/main/java/pubgm/loader/activity/MainActivity.java"
+            line="456"/>
+    </issue>
+
+    <issue
+        id="UseCompatLoadingForDrawables"
+        message="Use `ResourcesCompat.getDrawable()`">
+        <location
+            file="src/main/java/pubgm/loader/adapter/RecyclerViewAdapter.java"
+            line="146"/>
+    </issue>
+
+    <issue
+        id="UseCompatLoadingForDrawables"
+        message="Use `ResourcesCompat.getDrawable()`">
+        <location
+            file="src/main/java/pubgm/loader/adapter/RecyclerViewAdapter.java"
+            line="202"/>
+    </issue>
+
+    <issue
+        id="UseCompatTextViewDrawableXml"
+        message="Use `app:drawableEndCompat` instead of `android:drawableEnd`">
+        <location
+            file="src/main/res/layout/activity_navigation.xml"
+            line="28"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.background_login` appears to be unused">
+        <location
+            file="src/main/res/drawable/background_login.xml"
+            line="2"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.baseline_content_paste_go_24` appears to be unused">
+        <location
+            file="src/main/res/drawable/baseline_content_paste_go_24.xml"
+            line="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.baseline_import_export_24` appears to be unused">
+        <location
+            file="src/main/res/drawable/baseline_import_export_24.xml"
+            line="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.baseline_lock_24` appears to be unused">
+        <location
+            file="src/main/res/drawable/baseline_lock_24.xml"
+            line="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.anim.bounce` appears to be unused">
+        <location
+            file="src/main/res/anim/bounce.xml"
+            line="2"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.color1` appears to be unused">
+        <location
+            file="src/main/res/drawable/color1.xml"
+            line="2"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.color.PrimaryColor` appears to be unused">
+        <location
+            file="src/main/res/values/colors.xml"
+            line="10"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.color.grey_600` appears to be unused">
+        <location
+            file="src/main/res/values/colors.xml"
+            line="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.cursor` appears to be unused">
+        <location
+            file="src/main/res/drawable/cursor.xml"
+            line="2"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.custom_border_input1` appears to be unused">
+        <location
+            file="src/main/res/drawable/custom_border_input1.xml"
+            line="2"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.custom_cursor` appears to be unused">
+        <location
+            file="src/main/res/drawable/custom_cursor.xml"
+            line="2"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.raw.login` appears to be unused">
+        <location
+            file="src/main/res/raw/login.json"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.shadowslider` appears to be unused">
+        <location
+            file="src/main/res/drawable/shadowslider.xml"
+            line="2"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.parrot_cheat_always_safe_and_regular_updates` appears to be unused">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="122"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.PREMIUM` appears to be unused">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="123"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.rebrand` appears to be unused">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="124"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.hide_hack` appears to be unused">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="125"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.root_tools` appears to be unused">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="126"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.Floating_Menu` appears to be unused">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="127"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.vip` appears to be unused">
+        <location
+            file="src/main/res/drawable/vip.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.vip1` appears to be unused">
+        <location
+            file="src/main/res/drawable/vip1.png"/>
+    </issue>
+
+</issues>

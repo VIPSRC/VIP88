@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Open VIP can improve the speed of decompilation, resource code translate to name automatically and activate the smart editing and automatic completion function-->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="false">
+        <shape
+            android:dither="true"
+            android:visible="true"
+            android:useLevel="false">
+            <solid android:color="#FFFFFFFF" />
+            <corners android:radius="100dp" />
+            <size
+                android:height="21.79999dp"
+                android:width="21.79999dp" />
+            <stroke
+                android:width="3.5dp"
+                android:color="#0000FFFF" />
+        </shape>
+    </item>
+    <item android:state_checked="true">
+        <shape
+            android:dither="true"
+            android:visible="true"
+            android:useLevel="false">
+            <solid android:color="#FFFFFFFF" />
+            <corners android:radius="100dp" />
+            <size
+                android:height="21.79999dp"
+                android:width="21.79999dp" />
+            <stroke
+                android:width="3.5dp"
+                android:color="#0000FFFF" />
+        </shape>
+    </item>
+</selector>
