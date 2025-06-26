@@ -1,0 +1,748 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="0dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:id="@+id/aimpresdk"
+            android:alpha="0.8"
+            android:fontFamily="@font/google"
+            android:gravity="center"
+            android:text="@string/please_upgrade_to_premium"
+            android:textColor="@color/white"
+            android:textStyle="normal" />
+
+
+        <LinearLayout
+            android:id="@+id/memsec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="0dp"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/background"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="5dp"
+                                android:alpha="0.8"
+                                android:fontFamily="@font/google"
+                                android:gravity="start|center"
+                                android:text="@string/fixed_crash"
+                                android:textColor="@color/white"
+                                android:textStyle="normal" />
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:fontFamily="@font/google"
+                                android:gravity="start|center"
+                                android:text="@string/please_actived_in_first_logo_"
+                                android:textColor="@color/background"
+                                android:textSize="12sp" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:gravity="center">
+
+
+                        <Switch
+                            android:id="@+id/isfixcrash"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:thumb="@drawable/ic_switch_off"
+                            android:track="@drawable/ic_switch_on" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="0dp"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/background"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="5dp"
+                                android:alpha="0.8"
+                                android:fontFamily="@font/google"
+                                android:gravity="start|center"
+                                android:text="@string/magic_bullet_head"
+                                android:textColor="@color/white"
+                                android:textStyle="normal" />
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:fontFamily="@font/google"
+                                android:gravity="start|center"
+                                android:text="@string/magic_bullet_head_all_weapon"
+                                android:textColor="@color/whitegelap"
+                                android:textSize="12sp" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:gravity="center">
+
+
+                        <Switch
+                            android:id="@+id/ismagichead"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:thumb="@drawable/ic_switch_off"
+                            android:track="@drawable/ic_switch_on" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="0dp"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/background"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="5dp"
+                                android:alpha="0.8"
+                                android:fontFamily="@font/google"
+                                android:gravity="start|center"
+                                android:text="@string/hit_x_effect"
+                                android:textColor="@color/white"
+                                android:textStyle="normal" />
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:fontFamily="@font/google"
+                                android:gravity="start|center"
+                                android:text="@string/hit_x_effect_active_in_game"
+                                android:textColor="@color/whitegelap"
+                                android:textSize="12sp" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:gravity="center">
+
+
+                        <Switch
+                            android:id="@+id/ishitx"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:thumb="@drawable/ic_switch_off"
+                            android:track="@drawable/ic_switch_on" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="0dp"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/background"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="5dp"
+                                android:alpha="0.8"
+                                android:fontFamily="@font/google"
+                                android:gravity="start|center"
+                                android:text="@string/small_crosshair"
+                                android:textColor="@color/white"
+                                android:textStyle="normal" />
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:fontFamily="@font/google"
+                                android:gravity="start|center"
+                                android:text="@string/reduces_size_of_crosshairs"
+                                android:textColor="@color/whitegelap"
+                                android:textSize="12sp" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:gravity="center">
+
+
+                        <Switch
+                            android:id="@+id/issmallcross"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:thumb="@drawable/ic_switch_off"
+                            android:track="@drawable/ic_switch_on" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="0dp"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                   
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/background"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                               
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="5dp"
+                                android:alpha="0.8"
+                                android:fontFamily="@font/google"
+                                android:gravity="start|center"
+                                android:text="@string/less_recoil"
+                                android:textColor="@color/white"
+                                android:textStyle="normal" />
+
+
+                            <TextView
+                               
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:fontFamily="@font/google"
+                                android:gravity="start|center"
+                                android:text="@string/reduce_recoil_all_weapon"
+                                android:textColor="@color/whitegelap"
+                                android:textSize="12sp" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:gravity="center">
+
+
+                        <Switch
+                           
+                            android:id="@+id/isreducerecoil"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:thumb="@drawable/ic_switch_off"
+                            android:track="@drawable/ic_switch_on" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="0dp"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                   android:visibility="visible"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/background"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                               android:visibility="visible"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="5dp"
+                                android:alpha="0.8"
+                                android:fontFamily="@font/google"
+                                android:gravity="start|center"
+                                android:text="@string/aimbot_100m"
+                                android:textColor="@color/white"
+                                android:textStyle="normal" />
+
+
+                            <TextView
+                                android:visibility="visible"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:fontFamily="@font/google"
+                                android:gravity="start|center"
+                                android:text="@string/increases_aiming_speed"
+                                android:textColor="@color/whitegelap"
+                                android:textSize="13sp" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:gravity="center">
+
+
+                        <Switch
+                            android:id="@+id/isaimlock"
+                           android:visibility="visible"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:thumb="@drawable/ic_switch_off"
+                            android:track="@drawable/ic_switch_on" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="0dp"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/background"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="5dp"
+                                android:alpha="0.8"
+                                android:fontFamily="@font/google"
+                                android:gravity="start|center"
+                                android:text="@string/wide_view"
+                                android:textColor="@color/white"
+                                android:textStyle="normal" />
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:fontFamily="@font/google"
+                                android:gravity="start|center"
+                                android:text="@string/expands_view_of_the_screen"
+                                android:textColor="@color/background"
+                                android:textSize="13sp" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center">
+
+
+                        <SeekBar
+                            android:id="@+id/wideview"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_weight="1"
+                            android:max="600"
+                            android:progress="0"
+                            android:progressTint="@color/white"
+                            android:thumbTint="@color/blue" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="5dp"
+                            android:alpha="0.8"
+                            android:fontFamily="@font/google"
+                            android:text="@string/wide_view"
+                            android:textColor="@color/white"
+                            android:textSize="13sp"
+                            android:textStyle="normal" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:fontFamily="@font/google"
+                                android:text="@string/set_wide_view_range"
+                                android:textColor="@color/whitegelap"
+                                android:textSize="11sp" />
+
+
+                            <TextView
+                                android:id="@+id/rangetextwide"
+                                android:layout_width="40dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:layout_weight="1"
+                                android:alpha="0.8"
+                                android:fontFamily="@font/google"
+                                android:text="@string/esp_memory_rangetextwide_text"
+                                android:textColor="@color/whitegelap"
+                                android:textSize="11sp"
+                                android:textStyle="bold" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+
+                        <SeekBar
+                            android:id="@+id/rangewide"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:max="8"
+                            android:progress="0"
+                            android:layout_weight="1.0"
+                            style="@android:style/Widget.SeekBar"
+                            android:progressTint="@color/button" />
+
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

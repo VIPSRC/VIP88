@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/layoutControlView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/miniFloatMenu"
+            android:layout_width="22dp"
+            android:layout_height="25dp"
+            android:background="@drawable/shield"
+            android:backgroundTint="@color/button"
+            android:orientation="vertical"/>
+
+        <LinearLayout
+            android:id="@+id/mainmenu"
+            android:layout_width="300dp"
+            android:paddingStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/button_install"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="center">
+
+               <View
+                   android:id="@+id/closeprotcst"
+                   android:layout_width="100dp"
+                   android:layout_height="8dp"
+                   android:background="@drawable/button_coming"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/shield"
+                        android:backgroundTint="@color/button" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1.6"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textprotc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/imgprotc"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/google"
+                        android:text="PROTECTION" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="10dp"
+                    android:gravity="center">
+
+                    <Switch
+                        android:id="@+id/imgprotc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:thumb="@drawable/ic_switch_off"
+                        android:track="@drawable/ic_switch_on" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/islandmenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/shield"
+                        android:backgroundTint="@color/button"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1.6"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/itextprotc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/imgprotc"
+                        android:fontFamily="@font/google"
+                        android:text="ISLAND DISABLE"
+                        android:textColor="@color/white"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="10dp"
+                    android:gravity="center">
+
+                    <Switch
+                        android:id="@+id/iimgprotc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:thumb="@drawable/ic_switch_off"
+                        android:track="@drawable/ic_switch_on" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+</FrameLayout>
+

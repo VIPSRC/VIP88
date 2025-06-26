@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     xmlns:tools="http://schemas.android.com/tools"
+     android:layout_height="wrap_content"
+     android:layout_width="match_parent"
+     android:textAlignment="viewEnd"
+     tools:ignore="HardcodedText, UseSwitchCompatOrMaterialXml, UselessParent, TooManyViews"
+     android:layout_gravity="start|end">
+
+    <LinearLayout
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:orientation="horizontal"
+         android:id="@+id/layout_view">
+
+        <RelativeLayout
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:visibility="visible"
+             android:id="@+id/layout_icon_control_view">
+
+            <ImageView
+                 android:layout_height="45dp"
+                 android:layout_width="45dp"
+                 android:src="@drawable/icon"
+                 android:adjustViewBounds="true"
+                 android:scaleType="fitCenter"
+                 android:id="@+id/imageview_control" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+             android:layout_height="319dp"
+             android:layout_width="420dp"
+             android:visibility="gone"
+             android:orientation="horizontal"
+             android:id="@+id/layout_main_view">
+
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:layout_width="60dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/bg_header"
+                android:padding="8dp"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:id="@+id/navf1"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="19dp"
+                    android:layout_marginBottom="4dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:id="@+id/head1"
+                        android:layout_width="2dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="6dp"
+                        android:background="@drawable/vertical_line_shape"
+                        android:visibility="visible" />
+
+                    <!-- لينير داخلي عمودي لوضع الصورة فوق النص -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <!-- الصورة -->
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:src="@drawable/ic_baseline_display_settings_24"
+                            android:layout_marginBottom="2dp"/>
+
+                        <!-- النص -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:text="@string/espe1"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:textSize="13sp"
+                            android:textColor="@color/white"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:id="@+id/navf2"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:id="@+id/head2"
+                        android:layout_width="4dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="6dp"
+                        android:visibility="gone"
+                        android:background="@drawable/vertical_line_shape" />
+
+                    <!-- لينير داخلي عمودي لترتيب الصورة فوق النص -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <!-- الصورة -->
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:src="@drawable/items"
+                            android:layout_marginBottom="2dp"/>
+
+                        <!-- النص -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:text="@string/espItems"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:textSize="13sp"
+                            android:textColor="@color/white"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/navf5"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:id="@+id/head5"
+                        android:layout_width="4dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="6dp"
+                        android:visibility="gone"
+                        android:background="@drawable/vertical_line_shape" />
+
+                    <!-- لينير داخلي عمودي لوضع الصورة فوق النص -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <!-- الصورة -->
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:src="@drawable/vehicle"
+                            android:layout_marginBottom="2dp"/>
+
+                        <!-- النص -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:text="@string/espeCars"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:textSize="13sp"
+                            android:textColor="@color/white"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/navf3"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:id="@+id/head3"
+                        android:layout_width="4dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="6dp"
+                        android:visibility="gone"
+                        android:background="@drawable/vertical_line_shape" />
+
+                    <!-- لينير داخلي لترتيب الصورة فوق النص -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <!-- الصورة -->
+
+                        <!-- النص -->
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_marginBottom="2dp"
+                            android:src="@drawable/ic_aim" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:text="@string/espeaim"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:textSize="13sp"
+                            android:textColor="@color/white"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/navf4"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:id="@+id/head4"
+                        android:layout_width="4dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="6dp"
+                        android:visibility="gone"
+                        android:background="@drawable/vertical_line_shape" />
+
+                    <!-- لينر جديد داخلي عمودي ليضع الصورة فوق النص -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <!-- الصورة -->
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:src="@drawable/loot"
+                            android:layout_marginBottom="2dp"/>
+
+                        <!-- النص -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:text="@string/espesdk"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:textSize="13sp"
+                            android:textColor="@color/white"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/navf6"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:visibility="gone"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+
+                    <View
+                        android:id="@+id/head6"
+                        android:layout_width="4dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="6dp"
+                        android:visibility="gone"
+                        android:background="@drawable/vertical_line_shape" />
+
+
+                    <TextView
+                        android:layout_width="45dp"
+                        android:layout_height="25dp"
+                        android:text="Skin"
+                        android:textStyle="bold"
+                        android:gravity="center_vertical"
+                        android:textSize="15sp"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+                
+
+                <ImageView
+                     android:layout_height="30.0dp"
+                    android:layout_width="wrap_content"
+                     android:layout_marginBottom="8dp"
+                     android:src="@drawable/baseline_close_24"
+                     android:gravity="center"
+                     android:id="@+id/layout_close_main_view" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                 android:layout_height="match_parent"
+                 android:layout_width="match_parent"
+                 android:background="@drawable/bg_float"
+                 android:orientation="vertical">
+                
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="0dp"
+                    android:paddingBottom="0dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="8dp"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:id="@+id/menuf1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <include layout="@layout/esp_visual" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/menuf2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <include layout="@layout/esp_inventory" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/menuf3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <include layout="@layout/esp_aimbot" />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/menuf4"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <include layout="@layout/esp_memory" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/menuf5"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <include layout="@layout/esp_skin" />
+
+                        </LinearLayout>
+                        
+                        
+
+                        <!-- <androidx.viewpager.widget.ViewPager android:id="@+id/viewPager" android:layout_width="match_parent" android:layout_height="match_parent" tools:ignore="SpeakableTextPresentCheck" /> -->
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

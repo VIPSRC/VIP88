@@ -62,9 +62,12 @@ task clean(type: Delete) {
     delete rootProject.buildDir
 }
 
+
 ext {
+    is64Bit = true;
     packageName = "pubgm.loader";
     ndkVersion = "24.0.8215888";
+    abiFilters = is64Bit ? "arm64-v8a" : "armeabi-v7a";
     versionCode = 100;
-    versionName = "2.7.0";
+    versionName = "1.1.0";
 }

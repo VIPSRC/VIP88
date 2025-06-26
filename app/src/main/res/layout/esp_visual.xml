@@ -1,0 +1,733 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:alpha="0.8"
+                android:fontFamily="@font/google"
+                android:text="@string/render_framerate" 
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+
+
+                <RadioButton
+                    android:id="@+id/fps60"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:alpha="0.8"
+                    android:buttonTint="@color/button"
+                    android:text="@string/esp_visual_fps30_text"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+
+                <RadioButton
+                    android:id="@+id/fps120"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:alpha="0.8"
+                    android:buttonTint="@color/button"
+                    android:checked="true"
+                    android:text="@string/esp_visual_fps60_text"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/fps130"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:alpha="0.8"
+                    android:layout_marginStart="10dp"
+                    android:buttonTint="@color/button"
+                    android:checked="true"
+                    android:text="@string/_120fps"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+
+            </RadioGroup>
+
+
+            <TextView
+                android:id="@+id/protectiontext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:alpha="0.8"
+                android:fontFamily="@font/google"
+                android:text="@string/protection_cheats"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+
+            
+            
+
+            <LinearLayout
+                android:id="@+id/menuloho"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:elevation="10dp"
+                    android:visibility="visible"
+                    android:background="@drawable/button_installfl"
+                    android:padding="5dp"
+                    app:cardCornerRadius="10dp">
+
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="25dp"
+                        android:id="@+id/imgfixed"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="10dp"
+                        android:backgroundTint="@color/button"
+                        android:background="@drawable/protection" />
+
+
+                    <Switch
+                        android:id="@+id/isfixed"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginEnd="10dp"
+                        android:alpha="0.8"
+                        android:buttonTint="@color/button"
+                        android:fontFamily="@font/google"
+                        android:text="@string/protection_logo"
+                        android:textColor="#FFFFFFFF"
+                        android:textSize="15sp"
+                        android:thumb="@drawable/ic_switch_off"
+                        android:track="@drawable/ic_switch_on" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            
+            
+            
+             <LinearLayout
+                android:id="@+id/menucrash"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:visibility="gone"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:elevation="10dp"
+                    android:visibility="visible"
+                    android:background="@drawable/button_installfl"
+                    android:padding="5dp"
+                    app:cardCornerRadius="10dp">
+
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="25dp"
+                        android:id="@+id/imgfixedd"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="10dp"
+                        android:backgroundTint="@color/button"
+                        android:background="@drawable/baseline_diamond_24" />
+
+
+                    <Switch
+                        android:id="@+id/iscrash"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginEnd="10dp"
+                        android:alpha="0.8"
+                        android:buttonTint="@color/button"
+                        android:fontFamily="@font/google"
+                        android:text="@string/crash_fix_2nd_logo"
+                        android:textColor="#FFFFFFFF"
+                        android:textSize="15sp"
+                        android:thumb="@drawable/ic_switch_off"
+                        android:track="@drawable/ic_switch_on" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+<LinearLayout
+                android:id="@+id/menuisland"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:elevation="10dp"
+                    android:visibility="visible"
+                    android:background="@drawable/button_installfl"
+                    android:padding="5dp"
+                    app:cardCornerRadius="10dp">
+
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="25dp"
+                        android:id="@+id/imgisland"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="10dp"
+                        android:backgroundTint="@color/button"
+                        android:background="@drawable/baseline_auto_fix_high_24" />
+
+
+                    <Switch
+                        android:id="@+id/isisland"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginEnd="10dp"
+                        android:alpha="0.8"
+                        android:buttonTint="@color/button"
+                        android:fontFamily="@font/google"
+                        android:text="@string/block_report_island"
+                        android:textColor="#FFFFFFFF"
+                        android:textSize="15sp"
+                        android:thumb="@drawable/ic_switch_off"
+                        android:track="@drawable/ic_switch_on" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            
+            
+            
+            
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:alpha="0.8"
+                android:fontFamily="@font/google"
+                android:text="@string/esp_generic_adjustment"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:elevation="10dp"
+                    android:background="@drawable/button_installfl"
+                    android:padding="5dp"
+                    app:cardCornerRadius="10dp">
+
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="10dp"
+                        android:backgroundTint="@color/button"
+                        android:background="@drawable/esp" />
+
+
+                    <Switch
+                        android:id="@+id/isenableesp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginEnd="10dp"
+                        android:alpha="0.8"
+                        android:buttonTint="@color/button"
+                        android:fontFamily="@font/google"
+                        android:text="@string/esp_visual_isenableesp_text"
+                        android:textColor="#FFFFFFFF"
+                        android:textSize="15sp"
+                        android:thumb="@drawable/ic_switch_off"
+                        android:track="@drawable/ic_switch_on" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+
+                <CheckBox
+                    android:id="@+id/isline"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:alpha="0.8"
+                    android:buttonTint="@color/button"
+                    android:fontFamily="@font/google"
+                    android:text="@string/esp_visual_isline_text"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+
+                <CheckBox
+                    android:id="@+id/isBox"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="50dp"
+                    android:layout_weight="1"
+                    android:alpha="0.8"
+                    android:buttonTint="@color/button"
+                    android:fontFamily="@font/google"
+                    android:text="@string/esp_visual_isBox_text"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+
+                <CheckBox
+                    android:id="@+id/isskeleton"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:alpha="0.8"
+                    android:buttonTint="@color/button"
+                    android:fontFamily="@font/google"
+                    android:text="@string/esp_visual_isskeleton_text"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+
+                <CheckBox
+                    android:id="@+id/ishealth"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="50dp"
+                    android:layout_weight="1"
+                    android:alpha="0.8"
+                    android:buttonTint="@color/button"
+                    android:fontFamily="@font/google"
+                    android:text="@string/esp_visual_ishealth_text"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+
+                <CheckBox
+                    android:id="@+id/isName"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:alpha="0.8"
+                    android:buttonTint="@color/button"
+                    android:fontFamily="@font/google"
+                    android:text="@string/esp_visual_isName_text"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+
+                <CheckBox
+                    android:id="@+id/ishead"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_weight="1"
+                    android:alpha="0.8"
+                    android:buttonTint="@color/button"
+                    android:fontFamily="@font/google"
+                    android:text="@string/esp_visual_ishead_text"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+
+                <CheckBox
+                    android:id="@+id/isweaponicon"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:alpha="0.8"
+                    android:buttonTint="@color/button"
+                    android:fontFamily="@font/google"
+                    android:text="@string/weapon_icon"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+                <CheckBox
+                    android:id="@+id/isweapon"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_weight="1"
+                    android:alpha="0.8"
+                    android:buttonTint="@color/button"
+                    android:fontFamily="@font/google"
+                    android:text="@string/esp_visual_isweapon_text"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+
+            </LinearLayout>
+            
+            
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+
+                <CheckBox
+                    android:id="@+id/isalert"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:alpha="0.8"
+                    android:buttonTint="@color/button"
+                    android:fontFamily="@font/google"
+                    android:text="@string/esp_visual_isalert_text"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+
+                <CheckBox
+                    android:id="@+id/isthrowables"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_weight="1"
+                    android:alpha="0.8"
+                    android:buttonTint="@color/button"
+                    android:fontFamily="@font/google"
+                    android:text="@string/esp_visual_isthrowables_text"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <CheckBox
+                    android:id="@+id/isdistance"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:alpha="0.8"
+                    android:buttonTint="@color/button"
+                    android:fontFamily="@font/google"
+                    android:text="@string/esp_visual_isdistance_text"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+                
+
+                <CheckBox
+                    android:id="@+id/isnobot"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:alpha="0.8"
+                    android:visibility="visible"
+                    android:layout_marginStart="50dp"
+                    android:buttonTint="@color/button"
+                    android:fontFamily="@font/google"
+                    android:text="@string/esp_visual_isnobot_text"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+
+                <CheckBox
+                    android:id="@+id/isNation"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:alpha="0.8"
+                    android:buttonTint="@color/button"
+                    android:fontFamily="@font/google"
+                    android:text="Nation"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+
+                <CheckBox
+                    android:id="@+id/isPlayerUID"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_weight="1"
+                    android:alpha="0.8"
+                    android:buttonTint="@color/button"
+                    android:fontFamily="@font/google"
+                    android:text="PlayerUID"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+
+                <CheckBox
+                    android:id="@+id/islootbox"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:alpha="0.8"
+                    android:buttonTint="@color/button"
+                    android:fontFamily="@font/google"
+                    android:text="lootbox"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+
+                <CheckBox
+                    android:id="@+id/vm"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_weight="1"
+                    android:alpha="0.8"
+                    android:buttonTint="@color/button"
+                    android:fontFamily="@font/google"
+                    android:text="sw"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:visibility="visible"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:alpha="0.8"
+                            android:fontFamily="@font/google"
+                            android:text="@string/show_player_radar_map"
+                            android:textColor="@color/white"
+                            android:textSize="15sp"
+                            android:textStyle="normal" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/google"
+                                android:text="@string/displays_a_map_of_enemy_presence"
+                                android:textColor="@color/whitegelap"
+                                android:textSize="11sp" />
+
+
+                            <TextView
+                                android:id="@+id/radartext"
+                                android:layout_width="40dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:layout_weight="1"
+                                android:alpha="0.8"
+                                android:fontFamily="@font/google"
+                                android:text="@string/esp_visual_radartext_text"
+                                android:textColor="@color/white"
+                                android:textSize="11sp"
+                                android:textStyle="bold" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+
+                        <SeekBar
+                            android:id="@+id/strokeradar"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:max="500"
+                            android:progress="0"
+                            android:layout_weight="1.0"
+                            style="@android:style/Widget.SeekBar"
+                            android:progressTint="@color/button" />
+
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

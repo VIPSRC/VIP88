@@ -1,0 +1,9 @@
+<!-- res/drawable/checkbox_unchecked.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="@android:color/transparent" />
+    <stroke
+        android:width="2dp"
+        android:color="@color/blazered" />
+    <corners android:radius="2dp"/>
+</shape>

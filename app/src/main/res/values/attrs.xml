@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ds">
+        <attr name="colorPrimary" format="color"/>
+        <attr name="colorPrimaryDark" format="color"/>
+        <attr name="colorAccent" format="color"/>
+        <attr name="white" format="color"/>
+        <attr name="black" format="color"/>
+        <attr name="gray" format="color"/>
+        <attr name="gray200" format="color"/>
+        <attr name="myblueplus" format="color"/>
+		<attr name="whitepermanent" format="color"/>
+		<attr name="cardcancel" format="color"/>
+		<attr name="textcancel" format="color"/>
+    </declare-styleable>
+	
+		
+
+   
+	
+</resources>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="bahasa">
+        <item>中国</item>
+        <item>Arabic</item>
+        <item>English</item>
+    </string-array>
+    
+    <string-array name="mode_options">
+        <item>PREMIUM</item>
+        <item>FREE</item>
+    </string-array>
+
+
+
+
+</resources>

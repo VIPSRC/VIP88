@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="secondary">#ff1a1c29</color>
+    <color name="colorPrimary">#FF17202E</color>
+    <color name="colorPrimaryDark">#FFFFFF</color>
+    <color name="colorAccent">#FF5CBEFF</color>
+    <color name="main">#FA5B0B</color>
+    <color name="white">#FFFFFF</color>
+    <color name="background">#131522</color>
+    <color name="background2">#BE131522</color>
+    <color name="secodary">#1E2339</color>
+    <color name="secodary2">#272E48</color>
+    <color name="red">#C52C2E</color>
+    <color name="button">#FCA440</color>
+    <color name="blue">#FF2F68D6</color>
+    <color name="light">#FF5CBEFF</color>
+    <color name="whitegelap">#9C9999</color>
+    <color name="white80">#BEFFFFFF</color>
+    <color name="fl">#121421</color>
+    <!-- Button start stop -->
+    <color name="startbtn">#A82929</color>
+    <color name="stopbtn">#0F8F42</color>
+    <!-- Text Colour -->
+    <color name="license">#9E5C5C5C</color>
+    <color name="IJO">#38B841</color>
+    <color name="MERAH">#B83838</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="home">#2196F3</color>
+    <color name="activity">#673AB7</color>
+    <color name="favorites">#E91E63</color>
+    <color name="settings">#4CAF50</color>
+    <color name="bijikudan">#FFE500</color>
+    <color name="green">#0F8F42</color>
+    <color name="colorApp">#ffea0a0a</color>
+    <color name="blazered">#094676</color>
+    <color name="gray">#ffb1b1b1</color>
+    <color name="btngray">#E0E0E0</color>
+</resources>

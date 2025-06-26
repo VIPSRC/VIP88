@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/login_custom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40.0dip"
+        android:layout_marginTop="100.0dip"
+        android:layout_marginRight="40.0dip">
+        <ImageView
+            android:layout_height="100dp"
+            android:layout_width="100dp"
+            android:layout_marginTop="20.0dip"
+            
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:src="@drawable/icon" />
+        
+        <TextView
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:textAppearance="?android:attr/textAppearanceMedium"
+             android:layout_marginTop="20.0dip"
+             android:layout_marginBottom="10.0dip"
+             android:layout_gravity="center"
+             android:textColor="@color/black"
+             android:text="Downloading Assets..." />
+        
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20.0dip"
+            
+            android:layout_marginRight="20.0dip"
+            android:layout_marginBottom="30.0dip">
+            
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="3dp"
+                android:layout_gravity="center"
+                android:indeterminate="true"
+                android:progressDrawable="@drawable/progress_bar_custom"
+                android:indeterminateDrawable="@drawable/progress_bar_custom" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

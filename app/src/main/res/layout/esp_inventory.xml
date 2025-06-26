@@ -1,0 +1,3696 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:id="@+id/menu2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:visibility="gone"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+
+                <LinearLayout
+                    android:id="@+id/navitems"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center|bottom"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center">
+
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/items"
+                            android:backgroundTint="@color/white" />
+
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:id="@+id/bottomi1"
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:layout_marginStart="60dp"
+                        android:layout_marginEnd="60dp"
+                        android:background="@drawable/button_coming" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/navvehicle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center|bottom"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center">
+
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/ic_baseline_directions_car_24"
+                            android:backgroundTint="@color/white" />
+
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:id="@+id/bottomi2"
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:layout_marginStart="60dp"
+                        android:layout_marginEnd="60dp"
+                        android:background="@drawable/button_coming"
+                        android:visibility="gone" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/lyvehicle"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="0dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+
+                    <LinearLayout
+                        android:id="@+id/mobilscheckall"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/shadowfl">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/google"
+                            android:gravity="center|center_vertical"
+                            android:text="@string/check_all"
+                            android:textColor="@color/white" />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/mobilsblockall"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/shadowfl">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/google"
+                            android:gravity="center|center_vertical"
+                            android:text="@string/none_all"
+                            android:textColor="@color/white" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+
+                    <CheckBox
+                        android:id="@+id/UTV"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:alpha="0.8"
+                        android:buttonTint="@color/button"
+                        android:fontFamily="@font/google"
+                        android:padding="3dp"
+                        android:text="@string/esp_inventory_UTV_text"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+
+                    <CheckBox
+                        android:id="@+id/MonsterTruck"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:alpha="0.8"
+                        android:buttonTint="@color/button"
+                        android:fontFamily="@font/google"
+                        android:padding="3dp"
+                        android:text="@string/esp_inventory_MonsterTruck_text"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <CheckBox
+                        android:id="@+id/Buggy"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:alpha="0.8"
+                        android:buttonTint="@color/button"
+                        android:fontFamily="@font/google"
+                        android:padding="3dp"
+                        android:text="@string/esp_inventory_Buggy_text"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+
+                    <CheckBox
+                        android:id="@+id/UAZ"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:alpha="0.8"
+                        android:buttonTint="@color/button"
+                        android:fontFamily="@font/google"
+                        android:padding="3dp"
+                        android:text="@string/esp_inventory_UAZ_text"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <CheckBox
+                        android:id="@+id/Trike"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:alpha="0.8"
+                        android:buttonTint="@color/button"
+                        android:fontFamily="@font/google"
+                        android:padding="3dp"
+                        android:text="@string/esp_inventory_Trike_text"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+
+                    <CheckBox
+                        android:id="@+id/Jet"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:alpha="0.8"
+                        android:buttonTint="@color/button"
+                        android:fontFamily="@font/google"
+                        android:padding="3dp"
+                        android:text="@string/esp_inventory_Jet_text"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <CheckBox
+                        android:id="@+id/CoupeRB"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:alpha="0.8"
+                        android:buttonTint="@color/button"
+                        android:fontFamily="@font/google"
+                        android:padding="3dp"
+                        android:text="@string/esp_inventory_CoupeRB_text"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+
+                    <CheckBox
+                        android:id="@+id/Motorglider"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:alpha="0.8"
+                        android:buttonTint="@color/button"
+                        android:fontFamily="@font/google"
+                        android:padding="3dp"
+                        android:text="@string/esp_inventory_Motorglider_text"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <CheckBox
+                        android:id="@+id/Bike"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:alpha="0.8"
+                        android:buttonTint="@color/button"
+                        android:fontFamily="@font/google"
+                        android:padding="3dp"
+                        android:text="@string/esp_inventory_Bike_text"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+
+                    <CheckBox
+                        android:id="@+id/Dacia"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:alpha="0.8"
+                        android:buttonTint="@color/button"
+                        android:fontFamily="@font/google"
+                        android:padding="3dp"
+                        android:text="@string/esp_inventory_Dacia_text"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <CheckBox
+                        android:id="@+id/Boat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:alpha="0.8"
+                        android:buttonTint="@color/button"
+                        android:fontFamily="@font/google"
+                        android:padding="3dp"
+                        android:text="@string/esp_inventory_Boat_text"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+
+                    <CheckBox
+                        android:id="@+id/Bus"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:alpha="0.8"
+                        android:buttonTint="@color/button"
+                        android:fontFamily="@font/google"
+                        android:padding="3dp"
+                        android:text="@string/esp_inventory_Bus_text"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <CheckBox
+                        android:id="@+id/Mirado"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:alpha="0.8"
+                        android:buttonTint="@color/button"
+                        android:fontFamily="@font/google"
+                        android:padding="3dp"
+                        android:text="@string/esp_inventory_Mirado_text"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+
+                    <CheckBox
+                        android:id="@+id/Snowbike"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:alpha="0.8"
+                        android:buttonTint="@color/button"
+                        android:fontFamily="@font/google"
+                        android:padding="3dp"
+                        android:text="@string/esp_inventory_Snowbike_text"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <CheckBox
+                        android:id="@+id/Scooter"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:alpha="0.8"
+                        android:buttonTint="@color/button"
+                        android:fontFamily="@font/google"
+                        android:padding="3dp"
+                        android:text="@string/esp_inventory_Scooter_text"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+
+                    <CheckBox
+                        android:id="@+id/Rony"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:alpha="0.8"
+                        android:buttonTint="@color/button"
+                        android:fontFamily="@font/google"
+                        android:padding="3dp"
+                        android:text="@string/esp_inventory_Rony_text"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <CheckBox
+                        android:id="@+id/Snowmobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:alpha="0.8"
+                        android:buttonTint="@color/button"
+                        android:fontFamily="@font/google"
+                        android:padding="3dp"
+                        android:text="@string/esp_inventory_Snowmobile_text"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+
+                    <CheckBox
+                        android:id="@+id/Tempo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:alpha="0.8"
+                        android:buttonTint="@color/button"
+                        android:fontFamily="@font/google"
+                        android:padding="3dp"
+                        android:text="@string/esp_inventory_Tempo_text"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <CheckBox
+                        android:id="@+id/Truck"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:alpha="0.8"
+                        android:buttonTint="@color/button"
+                        android:fontFamily="@font/google"
+                        android:padding="3dp"
+                        android:text="@string/esp_inventory_Truck_text"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+
+                    <CheckBox
+                        android:id="@+id/LadaNiva"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:alpha="0.8"
+                        android:buttonTint="@color/button"
+                        android:fontFamily="@font/google"
+                        android:padding="3dp"
+                        android:text="@string/esp_inventory_LadaNiva_text"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp"
+                    android:orientation="horizontal">
+
+
+                    <CheckBox
+                        android:id="@+id/BRDM"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:alpha="0.8"
+                        android:buttonTint="@color/button"
+                        android:fontFamily="@font/google"
+                        android:padding="3dp"
+                        android:text="@string/esp_inventory_BRDM_text"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+
+                    <CheckBox
+                        android:id="@+id/ATV"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:alpha="0.8"
+                        android:buttonTint="@color/button"
+                        android:fontFamily="@font/google"
+                        android:padding="3dp"
+                        android:text="@string/esp_inventory_ATV_text"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/items1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="0dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+
+                    <LinearLayout
+                        android:id="@+id/itemscheckall"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/shadowfl">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/google"
+                            android:gravity="center|center_vertical"
+                            android:text="@string/check_all"
+                            android:textColor="@color/white" />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/itemsblockall"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/shadowfl">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/google"
+                            android:gravity="center|center_vertical"
+                            android:text="@string/none_all"
+                            android:textColor="@color/white" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:alpha="0.8"
+                        android:fontFamily="@font/google"
+                        android:gravity="left"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/special_item"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:textStyle="normal" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <CheckBox
+                            android:id="@+id/Crate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_Crate_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                        <CheckBox
+                            android:id="@+id/Airdrop"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_Airdrop_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <CheckBox
+                            android:id="@+id/DropPlane"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_DropPlane_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                        <CheckBox
+                            android:id="@+id/FlareGun"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_FlareGun_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <CheckBox
+                            android:id="@+id/lootbox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_lootbox_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:alpha="0.8"
+                        android:fontFamily="@font/google"
+                        android:gravity="left"
+                        android:text="@string/scopes"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:textStyle="normal" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <CheckBox
+                            android:id="@+id/x2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_x2_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                        <CheckBox
+                            android:id="@+id/x3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_x3_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <CheckBox
+                            android:id="@+id/x4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_x4_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                        <CheckBox
+                            android:id="@+id/x6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_x6_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <CheckBox
+                            android:id="@+id/x8"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_x8_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                        <CheckBox
+                            android:id="@+id/reddot"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_reddot_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <CheckBox
+                            android:id="@+id/hollow"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_hollow_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                        <CheckBox
+                            android:id="@+id/canted"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_canted_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:alpha="0.8"
+                        android:fontFamily="@font/google"
+                        android:gravity="left"
+                        android:text="@string/ar_weapons"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:textStyle="normal" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <CheckBox
+                            android:id="@+id/m416"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_m416_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                        <CheckBox
+                            android:id="@+id/AKM"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_AKM_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <CheckBox
+                            android:id="@+id/M16A4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_M16A4_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                        <CheckBox
+                            android:id="@+id/M762"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_M762_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <CheckBox
+                            android:id="@+id/SCARL"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_SCARL_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                        <CheckBox
+                            android:id="@+id/AC32"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_AC32_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <CheckBox
+                            android:id="@+id/AUG"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_AUG_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                        <CheckBox
+                            android:id="@+id/HoneyBadger"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_HoneyBadger_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <CheckBox
+                            android:id="@+id/G36C"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_G36C_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                        <CheckBox
+                            android:id="@+id/Groza"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_Groza_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <CheckBox
+                            android:id="@+id/QBZ"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_QBZ_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                        <CheckBox
+                            android:id="@+id/FAMAS"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_FAMAS_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:alpha="0.8"
+                        android:fontFamily="@font/google"
+                        android:gravity="left"
+                        android:text="@string/others_weapon"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:textStyle="normal" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <CheckBox
+                            android:id="@+id/M249"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_M249_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                        <CheckBox
+                            android:id="@+id/DP28"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_DP28_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <CheckBox
+                            android:id="@+id/MG3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_MG3_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:alpha="0.8"
+                        android:fontFamily="@font/google"
+                        android:gravity="left"
+                        android:text="@string/smg_weapons"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:textStyle="normal" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <CheckBox
+                            android:id="@+id/UMP"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_UMP_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                        <CheckBox
+                            android:id="@+id/TommyGun"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_TommyGun_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <CheckBox
+                            android:id="@+id/vector"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_vector_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                        <CheckBox
+                            android:id="@+id/MP5K"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_MP5K_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <CheckBox
+                            android:id="@+id/P90"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_P90_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                        <CheckBox
+                            android:id="@+id/UZI"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_UZI_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <CheckBox
+                            android:id="@+id/bizon"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_bizon_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:alpha="0.8"
+                        android:fontFamily="@font/google"
+                        android:gravity="left"
+                        android:text="@string/sniper_weapons"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:textStyle="normal" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <CheckBox
+                            android:id="@+id/AWM"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_AWM_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                        <CheckBox
+                            android:id="@+id/Kar98k"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_Kar98k_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <CheckBox
+                            android:id="@+id/M24"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_M24_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                        <CheckBox
+                            android:id="@+id/QBU"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_QBU_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <CheckBox
+                            android:id="@+id/Mini14"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_Mini14_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                        <CheckBox
+                            android:id="@+id/SKS"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_SKS_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <CheckBox
+                            android:id="@+id/SLR"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_SLR_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                        <CheckBox
+                            android:id="@+id/MK14"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_MK14_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <CheckBox
+                            android:id="@+id/Mosin"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_Mosin_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                        <CheckBox
+                            android:id="@+id/Win94"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_Win94_text"
+                            android:textColor="@color/white">
+
+                        </CheckBox>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <CheckBox
+                            android:id="@+id/MK12"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_MK12_text"
+                            android:textColor="@color/white">
+
+                        </CheckBox>
+
+
+                        <CheckBox
+                            android:id="@+id/VSS"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_VSS_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <CheckBox
+                            android:id="@+id/AMR"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_AMR_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                        <CheckBox
+                            android:id="@+id/MK47"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_MK47_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:alpha="0.8"
+                        android:fontFamily="@font/google"
+                        android:gravity="left"
+                        android:text="@string/shotguns"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:textStyle="normal" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <CheckBox
+                            android:id="@+id/S12K"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_S12K_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                        <CheckBox
+                            android:id="@+id/S1897"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_S1897_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <CheckBox
+                            android:id="@+id/S686"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_S686_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                        <CheckBox
+                            android:id="@+id/M1014"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_M1014_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <CheckBox
+                            android:id="@+id/sawed"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_sawed_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                        <CheckBox
+                            android:id="@+id/DBS"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_DBS_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <CheckBox
+                            android:id="@+id/NS2000"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_NS2000_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:alpha="0.8"
+                        android:fontFamily="@font/google"
+                        android:gravity="left"
+                        android:text="@string/pistols"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:textStyle="normal" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <CheckBox
+                            android:id="@+id/P92"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_P92_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                        <CheckBox
+                            android:id="@+id/R45"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_R45_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <CheckBox
+                            android:id="@+id/P18C"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_P18C_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                        <CheckBox
+                            android:id="@+id/P1911"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_P1911_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <CheckBox
+                            android:id="@+id/R1895"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_R1895_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                        <CheckBox
+                            android:id="@+id/Scorpion"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_Scorpion_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <CheckBox
+                            android:id="@+id/Desert"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_Desert_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:alpha="0.8"
+                        android:fontFamily="@font/google"
+                        android:gravity="left"
+                        android:text="@string/handy"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:textStyle="normal" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <CheckBox
+                            android:id="@+id/Pan"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_Pan_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                        <CheckBox
+                            android:id="@+id/Machete"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_Machete_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <CheckBox
+                            android:id="@+id/Sickle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_Sickle_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                        <CheckBox
+                            android:id="@+id/Crowbar"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_Crowbar_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <CheckBox
+                            android:id="@+id/Crossbow"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_Crossbow_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                        <CheckBox
+                            android:id="@+id/Explosive"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_Explosive_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:alpha="0.8"
+                        android:fontFamily="@font/google"
+                        android:gravity="left"
+                        android:text="@string/throwables"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:textStyle="normal" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <CheckBox
+                            android:id="@+id/grenade"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_grenade_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                        <CheckBox
+                            android:id="@+id/molotov"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_molotov_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <CheckBox
+                            android:id="@+id/smoke"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_smoke_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                        <CheckBox
+                            android:id="@+id/stun"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_stun_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:alpha="0.8"
+                        android:fontFamily="@font/google"
+                        android:gravity="left"
+                        android:text="@string/ammo_bullet"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:textStyle="normal" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <CheckBox
+                            android:id="@+id/a9"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_a9_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                        <CheckBox
+                            android:id="@+id/a7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_a7_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <CheckBox
+                            android:id="@+id/a5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_a5_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                        <CheckBox
+                            android:id="@+id/a12"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_a12_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <CheckBox
+                            android:id="@+id/a300"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_a300_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                        <CheckBox
+                            android:id="@+id/a45"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_a45_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <CheckBox
+                            android:id="@+id/arrow"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_arrow_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                        <CheckBox
+                            android:id="@+id/BMG50"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_BMG50_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:alpha="0.8"
+                        android:fontFamily="@font/google"
+                        android:gravity="left"
+                        android:text="@string/bag__helmet_and_vest"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:textStyle="normal" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <CheckBox
+                            android:id="@+id/bag1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_bag1_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                        <CheckBox
+                            android:id="@+id/helmet1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_helmet1_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <CheckBox
+                            android:id="@+id/bag2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_bag2_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                        <CheckBox
+                            android:id="@+id/helmet2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_helmet2_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <CheckBox
+                            android:id="@+id/bag3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_bag3_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                        <CheckBox
+                            android:id="@+id/helmet3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_helmet3_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <CheckBox
+                            android:id="@+id/vest1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_vest1_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                        <CheckBox
+                            android:id="@+id/vest2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_vest2_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <CheckBox
+                            android:id="@+id/vest3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_vest3_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:alpha="0.8"
+                        android:fontFamily="@font/google"
+                        android:gravity="left"
+                        android:text="@string/medics"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:textStyle="normal" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <CheckBox
+                            android:id="@+id/bandage"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_bandage_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                        <CheckBox
+                            android:id="@+id/medkit"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_medkit_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <CheckBox
+                            android:id="@+id/firstaid"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_firstaid_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                        <CheckBox
+                            android:id="@+id/injection"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_injection_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <CheckBox
+                            android:id="@+id/painkiller"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_painkiller_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                        <CheckBox
+                            android:id="@+id/energydrink"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_energydrink_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:alpha="0.8"
+                        android:fontFamily="@font/google"
+                        android:gravity="left"
+                        android:text="@string/suppressor_hider_compe"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:textStyle="normal" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <CheckBox
+                            android:id="@+id/SuppressorAr"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_SuppressorAr_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                        <CheckBox
+                            android:id="@+id/SuppressorSMG"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_SuppressorSMG_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <CheckBox
+                            android:id="@+id/FlashHiderAr"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_FlashHiderAr_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                        <CheckBox
+                            android:id="@+id/FlashHiderSMG"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_FlashHiderSMG_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <CheckBox
+                            android:id="@+id/ArCompensator"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_ArCompensator_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                        <CheckBox
+                            android:id="@+id/CompensatorSMG"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_CompensatorSMG_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <CheckBox
+                            android:id="@+id/SuppressorSniper"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_SuppressorSniper_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                        <CheckBox
+                            android:id="@+id/FlashHiderSniper"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_FlashHiderSniper_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <CheckBox
+                            android:id="@+id/SniperCompensator"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_SniperCompensator_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:alpha="0.8"
+                        android:fontFamily="@font/google"
+                        android:gravity="left"
+                        android:text="@string/magazine"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:textStyle="normal" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <CheckBox
+                            android:id="@+id/ExQdAr"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_ExQdAr_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                        <CheckBox
+                            android:id="@+id/ExQdSMG"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_ExQdSMG_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <CheckBox
+                            android:id="@+id/ExAr"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_ExAr_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                        <CheckBox
+                            android:id="@+id/ExSMG"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_ExSMG_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <CheckBox
+                            android:id="@+id/QdAr"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_QdAr_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                        <CheckBox
+                            android:id="@+id/QdSMG"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_QdSMG_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <CheckBox
+                            android:id="@+id/ExQdSniper"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_ExQdSniper_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                        <CheckBox
+                            android:id="@+id/ExSniper"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_ExSniper_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <CheckBox
+                            android:id="@+id/QdSniper"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_QdSniper_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:alpha="0.8"
+                        android:fontFamily="@font/google"
+                        android:gravity="left"
+                        android:text="@string/grip"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:textStyle="normal" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <CheckBox
+                            android:id="@+id/LaserSight"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_LaserSight_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                        <CheckBox
+                            android:id="@+id/LightGrip"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_LightGrip_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <CheckBox
+                            android:id="@+id/ThumbGrip"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_ThumbGrip_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                        <CheckBox
+                            android:id="@+id/VerticalGrip"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_VerticalGrip_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <CheckBox
+                            android:id="@+id/HalfGrip"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_HalfGrip_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                        <CheckBox
+                            android:id="@+id/AngledGrip"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_AngledGrip_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:alpha="0.8"
+                        android:fontFamily="@font/google"
+                        android:gravity="left"
+                        android:text="@string/others"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:textStyle="normal" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <CheckBox
+                            android:id="@+id/TacticalStock"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_TacticalStock_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                        <CheckBox
+                            android:id="@+id/Duckbill"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_Duckbill_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <CheckBox
+                            android:id="@+id/Choke"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_Choke_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                        <CheckBox
+                            android:id="@+id/StockMicroUZI"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_StockMicroUZI_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <CheckBox
+                            android:id="@+id/QuiverCrossBow"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_QuiverCrossBow_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                        <CheckBox
+                            android:id="@+id/BulletLoop"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_BulletLoop_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="25dp"
+                        android:orientation="horizontal">
+
+
+                        <CheckBox
+                            android:id="@+id/GasCan"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_GasCan_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                        <CheckBox
+                            android:id="@+id/CheekPad"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:alpha="0.8"
+                            android:buttonTint="@color/button"
+                            android:fontFamily="@font/google"
+                            android:padding="3dp"
+                            android:text="@string/esp_inventory_CheekPad_text"
+                            android:textColor="@color/white"
+                            android:textSize="15sp">
+
+                        </CheckBox>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

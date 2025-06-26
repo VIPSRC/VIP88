@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/b_2"
+    android:orientation="vertical"
+    android:visibility="visible"
+    android:id="@+id/ANTIBAN">
+
+
+    <!-- Nav root - noroot -->
+
+
+    <LinearLayout
+        android:id="@+id/watermark111"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/button_coming2"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layoutDirection="ltr"
+        android:elevation="4dp">
+        <!-- Adds the shadow -->
+        <!-- New bold black TextView on the left side -->
+
+        <!-- Spacer to push the remaining elements to the right -->
+
+        <!-- TextView moved to the right side -->
+        <TextView
+            android:id="@+id/textroot"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="@string/activity_navigation_textroot_text" />
+        <!-- ImageView moved to the right side -->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/outline_gpp_good_24" />
+    </LinearLayout>
+
+
+    <!-- <androidx.viewpager.widget.ViewPager android:id="@+id/viewpager" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="30dp" android:layout_marginBottom="70dp" /> -->
+
+
+    <!-- Metode Manualy -->
+    <LinearLayout
+        android:id="@+id/imenu1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include layout="@layout/activity_main" />
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/imenu2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="65dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include layout="@layout/activity_other" />
+
+        </ScrollView>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/imenu3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="65dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include layout="@layout/activity_tools" />
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+
+    android:elevation="4dp"
+    android:orientation="vertical">
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:forceDarkAllowed="true"
+        app:indicatorColor="@color/button"
+        app:trackColor="@color/btngray"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@drawable/button_coming3"
+        android:elevation="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:background="@drawable/button_coming3"
+            android:elevation="8dp"
+            android:weightSum="3">
+
+            <!-- Home Section -->
+
+
+            <!-- Home profiles -->
+
+
+            <LinearLayout
+                android:id="@+id/navhome"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/effecthome"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="3dp"
+                    android:gravity="center"
+                    android:padding="2dp">
+
+                    <ImageView
+                        android:id="@+id/imghome"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_home" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txthome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="2dp"
+                    android:gravity="center"
+                    android:text="@string/home"
+                    android:textColor="@color/gray"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/profiles"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/eprofiles"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:padding="2dp"
+                    android:gravity="center"
+                    android:layout_marginTop="3dp">
+
+                    <ImageView
+                        android:id="@+id/uuprofiles"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/web" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/cczd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="2dp"
+                    android:gravity="center"
+                    android:text="@string/profile"
+                    android:textColor="@color/gray"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- Settings Section -->
+            <LinearLayout
+                android:id="@+id/navsetting"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/effectsetting"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:padding="2dp"
+                    android:gravity="center"
+                    android:layout_marginTop="3dp">
+
+                    <ImageView
+                        android:id="@+id/imgsett"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:tint="@color/gray"
+                        android:background="@drawable/outline_settings_24" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txtsett"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textColor="@color/gray"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="2dp"
+                    android:text="@string/settings" />
+            </LinearLayout>
+        </LinearLayout>
+        <!-- Progress Bar -->
+    </LinearLayout>
+</LinearLayout>
+
+
+
+</RelativeLayout>

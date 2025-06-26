@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<shape android:shape="rectangle"
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--Radius of all four corners-->
+    <corners
+        android:bottomRightRadius="5dp"
+        android:bottomLeftRadius="5dp"
+        android:topLeftRadius="5dp"
+        android:topRightRadius="5dp"/>
+
+	
+
+	<!--Fill Color of the Button-->
+	<gradient android:startColor="@color/blazered"
+        android:endColor="@color/blazered"
+        android:angle="90"/>
+</shape>

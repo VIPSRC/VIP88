@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/mnm"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:alpha="0.8"
+                                android:fontFamily="@font/google"
+                                android:text="Choice Skin X-SUIT"
+                                android:textColor="@color/white"
+                                android:textSize="15sp"
+                                android:textStyle="normal" />
+
+
+
+                            <CheckBox
+                                android:id="@+id/pharaohskin"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layoutDirection="rtl"
+                                android:textColor="@color/white"
+                                android:text="Pharaoh X-Suit"
+                                android:fontFamily="@font/google"
+                                android:layout_marginTop="20dp"
+                                />
+
+                            <CheckBox
+                                android:id="@+id/bloodreven"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layoutDirection="rtl"
+                                android:textColor="@color/white"
+                                android:text="Blood Raven X-Suit"
+                                android:fontFamily="@font/google"
+                                android:layout_marginTop="20dp"
+                                />
+
+                            <CheckBox
+                                android:id="@+id/posreidon"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layoutDirection="rtl"
+                                android:textColor="@color/white"
+                                android:text="Poseidon X-Suit"
+                                android:fontFamily="@font/google"
+                                android:layout_marginTop="20dp"
+                                />
+
+
+                            <CheckBox
+                                android:id="@+id/avalache"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layoutDirection="rtl"
+                                android:textColor="@color/white"
+                                android:text="Avalanche X-Suit"
+                                android:fontFamily="@font/google"
+                                android:layout_marginTop="20dp"
+                                />
+
+                            <CheckBox
+                                android:id="@+id/silvanus"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layoutDirection="rtl"
+                                android:textColor="@color/white"
+                                android:text="Silvanus X-Suit"
+                                android:fontFamily="@font/google"
+                                android:layout_marginTop="20dp"
+                                />
+
+
+                            <CheckBox
+                                android:id="@+id/iridescense"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layoutDirection="rtl"
+                                android:textColor="@color/white"
+                                android:text="Iridescence X-Suit"
+                                android:fontFamily="@font/google"
+                                android:layout_marginTop="20dp"
+                                />
+
+                            <CheckBox
+                                android:id="@+id/aracane"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layoutDirection="rtl"
+                                android:layout_marginBottom="20dp"
+                                android:textColor="@color/white"
+                                android:text="Arcane Jester X-Suit"
+                                android:fontFamily="@font/google"
+                                android:layout_marginTop="20dp"
+                                />
+
+
+
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

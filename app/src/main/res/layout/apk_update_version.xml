@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_height="wrap_content"
+     android:layout_width="match_parent"
+     android:background="@drawable/updateback"
+     android:padding="16dp"
+     android:orientation="vertical">
+
+    <TextView
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:textSize="18sp"
+         android:paddingBottom="8dp"
+         android:id="@+id/update_title"
+         android:textColor="@color/blazered"
+         android:text="@string/update_available"
+         android:textStyle="bold" />
+
+    <TextView
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:paddingBottom="16dp"
+         android:id="@+id/update_size"
+         android:textColor="@color/black"
+         android:text="Download size: 6.2 MB" />
+
+    <TextView
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:paddingBottom="8dp"
+         android:id="@+id/update_message"
+         android:textColor="@color/black" 
+         android:text="Vip Loader Update Available New Version Download In Fast" />
+
+    <LinearLayout
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:gravity="end"
+         android:orientation="horizontal">
+
+        <TextView
+             android:layout_height="30dp"
+             android:layout_width="wrap_content"
+             android:layout_marginEnd="16dp"
+             android:background="@drawable/button_uinstalll"
+             android:gravity="center"
+             android:textColor="@color/white"
+             android:id="@+id/btn_no_thanks"
+             android:text="  EXIT APP  " />
+
+        <TextView
+             android:layout_height="30dp"
+             android:layout_width="70dp"
+             android:background="@drawable/button_playy"
+             android:gravity="center"
+             android:textColor="@color/white"
+             android:id="@+id/btn_update"
+             android:text="UPDATE" />
+
+    </LinearLayout>
+
+    <LinearLayout
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:gravity="left|center"
+         android:orientation="horizontal">
+
+        <ImageView
+             android:layout_height="35dp"
+             android:layout_width="35dp"
+             android:src="@drawable/ic_play_store" />
+
+        <TextView
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:textSize="14dp"
+             android:textColor="@android:color/black"
+             android:layout_marginStart="8dp"
+             android:text="Google Play" />
+
+    </LinearLayout>
+
+</LinearLayout>

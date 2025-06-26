@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     android:layout_height="match_parent"
+     android:layout_width="match_parent"
+     android:background="@drawable/b_2">
+
+    <LinearLayout
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_marginTop="10dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:gravity="center_vertical">
+
+    <!-- Left Spinner for PREMIUM MODE and FREE MODE -->
+    <com.skydoves.powerspinner.PowerSpinnerView
+        android:id="@+id/mode_spinner"
+        android:layout_height="40.0dip"
+        android:layout_width="0dp"
+        android:visibility="gone"
+        android:layout_weight="1"
+        android:padding="10.0dip"
+        android:textSize="14.5sp"
+        android:textColor="#000"
+        app:spinner_popup_elevation="5.0dip"
+        android:gravity="center"
+        android:hint="Mode"
+        android:textColorHint="#000"
+        android:textStyle="bold"
+        app:spinner_arrow_gravity="start"
+        app:spinner_divider_size="0.25dip"
+        app:spinner_arrow_animate="true"
+        app:spinner_divider_show="true"
+        app:spinner_preference_name="mode"
+        app:spinner_arrow_padding="8.0dip"
+        app:spinner_popup_focusable="true"
+        app:spinner_popup_animation="dropdown"
+        app:spinner_item_height="40.0dip"
+        app:spinner_popup_background="@drawable/custom_border_input1"
+        android:fontFamily="@font/en_regular"
+        app:spinner_arrow_tint="#000"
+        app:spinner_divider_color="#000"
+        app:spinner_item_array="@array/mode_options" />
+
+    <!-- Right Spinner for Language Selection -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end"
+        android:padding="8dp">
+
+        <com.skydoves.powerspinner.PowerSpinnerView
+            android:id="@+id/bahasa"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:padding="10dp"
+            android:background="@drawable/trbyno1"
+            android:gravity="center"
+            android:textSize="14.5sp"
+            android:textColor="#000"
+            android:hint="@string/english"
+            android:textColorHint="#fff"
+            android:textStyle="bold"
+            android:fontFamily="@font/en_regular"
+            app:spinner_popup_elevation="5dp"
+            app:spinner_arrow_gravity="end"
+            app:spinner_divider_size="0.25dp"
+            app:spinner_arrow_animate="true"
+            app:spinner_divider_show="true"
+            app:spinner_preference_name="country"
+            app:spinner_arrow_padding="8dp"
+            app:spinner_popup_focusable="true"
+            app:spinner_popup_animation="dropdown"
+            app:spinner_item_height="40dp"
+            app:spinner_popup_background="@drawable/custom_border_input1"
+            app:spinner_arrow_tint="#000"
+            app:spinner_divider_color="#000"
+            app:spinner_item_array="@array/bahasa" />
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:gravity="center"
+         android:orientation="horizontal"
+         android:layout_marginTop="130dp"
+         android:id="@+id/wmms">
+
+        <ImageView
+             android:layout_height="150dp"
+             android:layout_width="150dp"
+             android:adjustViewBounds="true"
+             android:src="@drawable/icon" />
+
+    </LinearLayout>
+
+    <LinearLayout
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:layout_below="@id/wmms"
+         android:layout_marginEnd="20dp"
+         android:gravity="center"
+         android:orientation="vertical"
+         android:layout_marginTop="30dp"
+         android:layout_marginStart="20dp"
+         android:id="@+id/loginss">
+
+        <TextView
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:textAppearance="?android:attr/textAppearanceMedium"
+             android:textSize="15sp"
+             android:fontFamily="@font/cof"
+             android:textColor="@color/btngray"
+             android:text="@string/logtv3" />
+
+        <com.google.android.material.textfield.TextInputLayout
+             android:layout_height="wrap_content"
+             android:layout_width="fill_parent"
+             app:boxStrokeColor="@color/button"
+             app:hintTextColor="@color/button"
+             android:layout_marginTop="10dp"
+             android:background="@drawable/bitfalse2"
+             app:boxStrokeWidth="1dp"
+             android:layout_marginBottom="10dp"
+             app:endIconMode="custom"
+             android:hint="Email"
+             app:endIconTint="@color/button"
+             app:endIconDrawable="@drawable/ic_paste"
+             app:boxStrokeWidthFocused="1dp"
+             android:id="@+id/email_layout">
+
+            <com.google.android.material.textfield.TextInputEditText
+                 android:layout_height="wrap_content"
+                 android:layout_width="fill_parent"
+                 android:textColor="@color/button"
+
+                 android:textCursorDrawable="@drawable/cursor"
+                 android:inputType="textVisiblePassword"
+                 android:id="@+id/textPassword" />
+
+            <TextView
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:visibility="gone"
+                 android:layout_marginEnd="30dp"
+                 android:textColor="@android:color/holo_red_light"
+                 android:id="@+id/error_password" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+             android:layout_height="wrap_content"
+             android:layout_width="fill_parent"
+             android:layout_marginBottom="5dp"
+             android:hint="Password"
+            android:background="@drawable/bitfalse2"
+             app:passwordToggleTint="@color/button"
+             app:boxStrokeColor="@color/button"
+             app:boxStrokeWidthFocused="1dp"
+             app:hintTextColor="@color/button"
+             app:passwordToggleEnabled="true"
+             android:layout_marginTop="10dp"
+             app:boxStrokeWidth="1dp"
+             android:id="@+id/password_layout">
+
+            <com.google.android.material.textfield.TextInputEditText
+                 android:layout_height="wrap_content"
+                 android:layout_width="fill_parent"
+                 android:textColor="@color/btngray"
+                 android:textCursorDrawable="@drawable/cursor"
+                 android:inputType="textPassword"
+                 android:id="@+id/textUsername" />
+
+            <TextView
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:visibility="gone"
+                 android:layout_marginEnd="30dp"
+                 android:textColor="@android:color/holo_red_light"
+                 android:id="@+id/error_username" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:gravity="center_vertical"
+             android:orientation="horizontal">
+
+            <CheckBox
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:buttonTint="@color/button"
+                 android:textColor="@color/btngray"
+                 android:paddingStart="0dp"
+                 android:layout_marginStart="-7dp"
+                 android:id="@+id/remember_me_checkbox"
+                 android:text="Remember me" />
+
+            <TextView
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:gravity="end"
+                 android:textColor="@color/black"
+                 android:layout_marginStart="16dp"
+                 android:layout_weight="1"
+                 android:id="@+id/reset_key_text"
+                 android:text="Reset Key?" />
+
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+             android:layout_height="60dp"
+             android:layout_marginBottom="5dp"
+             android:layout_width="match_parent"
+             app:shapeAppearanceOverlay="@style/ButtonShape"
+             android:textSize="15sp"
+             android:fontFamily="@font/en_regular"
+             android:backgroundTint="@color/button"
+             android:textColor="@color/white"
+             android:id="@+id/loginBtn"
+             android:text="@string/login" />
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="40dp"
+            android:layout_below="@id/loginss"
+            android:layout_marginEnd="20dp"
+            android:gravity="bottom|center"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="20dp"
+            android:id="@+id/bottomcopyright"
+            android:layout_gravity="bottom">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:fontFamily="@font/google"
+                android:textColor="@color/btngray"
+                android:text="@string/don_t_have_key" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:fontFamily="@font/cof"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/button"
+                android:id="@+id/registerText"
+                android:text="@string/activity_login_registerText_text" />
+
+
+        </LinearLayout>
+        <LinearLayout
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:layout_marginEnd="5dp"
+
+             android:gravity="center_vertical"
+             android:orientation="horizontal"
+             android:layout_marginStart="5dp">
+
+            <LinearLayout
+                 android:layout_height="1dp"
+                 android:layout_width="match_parent"
+                 android:background="@android:color/black"
+                 android:layout_weight="1">
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_height="50dp"
+                android:layout_width="50dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_telegram" />
+
+
+            <LinearLayout
+                 android:layout_height="1dp"
+                 android:layout_width="match_parent"
+                 android:background="@android:color/black"
+                 android:layout_weight="1">
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        
+        <LinearLayout
+             android:layout_height="wrap_content"
+             android:layout_width="fill_parent"
+             android:layout_marginTop="5dp"
+             android:layout_marginBottom="50.0dip"
+             android:gravity="center"
+            android:visibility="gone"
+             android:background="@android:color/transparent"
+             android:orientation="horizontal"
+             android:layout_marginLeft="0dp"
+             android:layout_marginRight="0dp">
+
+            <LinearLayout
+                 android:layout_height="50dp"
+                 android:layout_width="match_parent"
+                 android:layout_marginEnd="5dp"
+                 android:gravity="center"
+                 android:backgroundTint="#FF2B8CBF"
+                 android:background="@drawable/login_socialback"
+                 android:padding="8.0dip"
+                 android:orientation="horizontal"
+                 android:layout_weight="1.0"
+                 android:id="@+id/timg"
+                 android:layout_gravity="center|left">
+
+                <ImageView
+                     android:layout_height="27.0dip"
+                     android:layout_width="27.0dip"
+                     android:src="@drawable/ic_tele"
+                     android:scaleType="fitCenter"
+                     android:tint="#FFFFFF" />
+
+                <TextView
+                     android:layout_height="wrap_content"
+                     android:layout_width="wrap_content"
+                     android:padding="8.0dip"
+                     android:textSize="12.0sp"
+                     android:fontFamily="@font/cof"
+                     android:textColor="#FFFFFF"
+                     android:textStyle="bold"
+                     android:id="@+id/ssl1"
+                     android:text="@string/telenew" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                 android:layout_height="50dp"
+                 android:layout_marginStart="5dp"
+                 android:layout_width="match_parent"
+                 android:gravity="center"
+                 android:backgroundTint="#000000"
+                 android:background="@drawable/login_socialback"
+                 android:padding="8.0dip"
+                 android:orientation="horizontal"
+                 android:layout_weight="1.0"
+                 android:id="@+id/website"
+                 android:layout_gravity="center|left">
+
+                <ImageView
+                     android:layout_height="30.0dip"
+                     android:layout_width="30.0dip"
+                     android:src="@drawable/google"
+                     android:scaleType="fitCenter"/>
+
+                <TextView
+                     android:layout_height="wrap_content"
+                     android:layout_width="wrap_content"
+                     android:padding="8.0dip"
+                     android:textSize="12.0sp"
+                     android:fontFamily="@font/cof"
+                     android:textColor="#FFFFFF"
+                     android:textStyle="bold"
+                     android:id="@+id/ssl2"
+                     android:text="@string/tiktoknew" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

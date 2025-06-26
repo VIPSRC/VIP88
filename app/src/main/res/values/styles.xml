@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.Material3.Dark.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/button</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:layoutDirection">ltr</item>
+        <item name="android:windowBackground">@color/background</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:navigationBarColor">@color/background</item>
+        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges <!-- default, shortEdges, or never --></item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="materialAlertDialogTheme">@style/ThemeOverlay.Material3.MaterialAlertDialog</item>
+        <item name="dialogCornerRadius">28dp</item>
+        <item name="alertDialogTheme">@style/ThemeOverlay.Material3.MaterialAlertDialog</item>
+
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="AppTheme.SwitchPreference" parent="Preference.SwitchPreference.Material">
+        <item name="android:widgetLayout">@layout/layout_material_switch_style</item>
+    </style>
+    
+   <style name="Theme.CheatUIDev.MainActivity.ActionButton" parent="@style/Widget.MaterialComponents.Button.TextButton">
+        <item name="android:gravity">start|center</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="singleLine">true</item>
+        <item name="strokeColor">@color/btngray</item>
+        <item name="strokeWidth">@dimen/mtrl_btn_stroke_size</item>
+    </style>
+    
+   <style name="Widget.MaterialComponents.Button.OutlinedButton" parent="@style/Widget.MaterialComponents.Button.TextButton">
+        <item name="android:paddingLeft">@dimen/mtrl_btn_padding_left</item>
+        <item name="android:paddingRight">@dimen/mtrl_btn_padding_right</item>
+        <item name="strokeColor">@color/btngray</item>
+        <item name="strokeWidth">@dimen/mtrl_btn_stroke_size</item>
+    </style>
+    
+    <style name="TextAppearance.MaterialComponents.Caption" parent="@style/TextAppearance.AppCompat.Caption">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:letterSpacing">0.033333335</item>
+        <item name="fontFamily">sans-serif</item>
+    </style>
+    
+    <style name="TextAppearance.MaterialComponents.Body1" parent="@style/TextAppearance.AppCompat.Body2">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:letterSpacing">0.03125</item>
+        <item name="fontFamily">sans-serif</item>
+    </style>
+    <style name="TextAppearance.MaterialComponents.Body2" parent="@style/TextAppearance.AppCompat.Body1">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:letterSpacing">0.017857144</item>
+        <item name="fontFamily">sans-serif</item>
+    </style>
+    <style name="Theme.CheatUIDev.ShapeAppearanceOverlay.Circle" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50.0%</item>
+    </style>
+    
+
+    <!-- Style for the body of the dialog -->
+    <style name="AlertDialogBodyStyle" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:textColor">@color/black</item> <!-- Text color black -->
+    </style>
+
+    <!-- Rounded shape with 4dp radius -->
+    <style name="DialogShape" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">4dp</item>
+    </style>
+    <!-- Custom style for the AlertDialog -->
+    <style name="CustomAlertDialogTheme" parent="ThemeOverlay.MaterialComponents.MaterialAlertDialog">
+        <!-- Use the custom background drawable -->
+        <item name="shapeAppearance">@style/DialogShape</item>
+        <item name="android:background">@drawable/dialog_background</item>
+    </style>
+    <style
+        name="PKSwitch2"
+        parent="Theme.AppCompat.Light">
+        <item name="colorControlActivated">@color/white</item>
+        <!-- inactive thumb color -->
+        <item name="colorSwitchThumbNormal">#FFFFFF</item>
+        <!-- inactive track color (30% transparency) -->
+        <item name="android:colorForeground">#FFFFFF</item>
+    </style>
+    
+    <style name="ButtonShape">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">4dp</item>
+    </style>
+
+    <style
+        name="PKSwitch"
+        parent="Theme.AppCompat.Light">
+        <item name="colorControlActivated">@color/white</item>
+        <!-- inactive thumb color -->
+        <item name="colorSwitchThumbNormal">#FFFFFF</item>
+        <!-- inactive track color (50% transparency) -->
+        <item name="android:colorForeground">#FFFFFF</item>
+    </style>
+
+    <style name="Widget.BottomNavigationView"
+        parent="Widget.Design.BottomNavigationView">
+        <item name="fontFamily">@font/en_regular</item>
+    </style>
+    <style name="CircularDeterminateProgressBar">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/cicrle</item>
+    </style>
+    <style name="mySpinnerItemStyle" parent="@android:style/Widget.Holo.DropDownItem.Spinner">
+        <item name="android:textColor">@color/background</item>
+    </style>
+</resources>

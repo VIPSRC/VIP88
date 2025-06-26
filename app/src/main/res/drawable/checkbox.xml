@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <solid
+                android:color="@color/button"/>
+            <size
+                android:width="35dp"
+                android:height="35dp"/>
+        </shape>
+    </item>
+
+    <item>
+        <inset
+            android:drawable="@drawable/baseline_settings_24"
+            android:insetBottom="10dp"
+            android:insetLeft="10dp"
+            android:insetRight="10dp"
+            android:insetTop="10dp"/>
+    </item>
+
+</layer-list>
